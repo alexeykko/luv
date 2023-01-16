@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Ubuntu:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    padding: auto;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #333333;
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+}
+.media-controls{
+    width: 80%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+.g1{
+display: flex;
+width: 50vw;
+justify-content: center;
+padding: 0;
+}
+#play-pause{
+    border: none;
+    border-radius: 50%;
+    background: none;
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+#previous-song{
+  border: none;
+  border-radius: 50%;
+  background: none;
+  font-size: 46px;
+  text-align: center;
+  color: white;
+}
+#next-song{
+  border: none;
+  border-radius: 50%;
+  background: none;
+  font-size: 46px;
+  text-align: center;
+  color: white;
+}
+#previous-song:hover{
+  color: rgb(200, 200, 200);
+}
+#next-song:hover{
+  color: rgb(200, 200, 200);
+}
+#play-pause:hover{
+    color: rgb(200, 200, 200);
+}
+#mute{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding-left: 15px;
+}
+#mute:hover{
+    color: rgb(200, 200, 200);
+}
+#current-time{
+    color: white;
+    padding: 20px;
+    padding-right: 20px;
+    font-size: large;
+}
+#duration {
+    color: white;
+    padding: 20px;
+    padding-left: 20px;
+    font-size: large;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 30px;
+    padding: 50px;
+    padding-bottom: 350px;
+  }
+  .w50{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    margin: 50px;
+    margin-top: 100px;
+  }
+  .link{
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 64px;
+    color: rgb(220, 96, 137);
+  }
+  .link:hover {
+    animation: shine 1s ease-in-out infinite;
+    text-shadow: 0 0 20px #fff;
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+  }
+  @keyframes shine {
+    0% {
+      text-shadow: 0 0 5px #fff;
+    }
+    50% {
+      text-shadow: 0 0 20px #fff;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff;
+    }
+  }
+  .mp{
+    background-image: url(LuvVsTheWorld2No.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .EternalAtake{
+    background-image: url(EternalAtake.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  .LuvIsRage{
+    background-image: url(LuvIsRage.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  .song{
+    height: 200px;
+    font-family: 'Covered By Your Grace', cursive;
+    margin: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(51, 51, 51, 0.9);
+  }
+  .song h1{
+    color: #fff;
+    text-shadow: 0 0 20px black;
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0;
+  }
+  .song h1:hover{
+    cursor: default;
+    -webkit-text-stroke: 0.1px rgba(222, 222, 222, 0.619);
+  }
+  .song .bi{
+    color: white;
+    margin: 20px;
+    align-items: center;
+  }
+.song:hover{
+  /* transform: translate(-4px, 5px); */
+  animation: shake .3s infinite alternate;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #00ddff1a;
+  transition: all 0.2s ease;
+  /* animation: width .3s; */
+}
+@keyframes width {
+  0%{
+    border-radius: 100%;
+  }
+  100%{
+    border-radius: 10px;
+  }
+}
+h1:hover{
+  animation: shine2 1.5s ease-in-out infinite;
+}
+
+@keyframes shine2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+  from {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(255, 255, 176);
+  }
+}
+@keyframes shake {
+  0% { transform: translate(0px, 4px); }
+  33% { transform: translate(2px, 4px); }
+  66% { transform: translate(-1px, 6px); }
+  100% { transform: translate(2px, -1px); }
+  from {
+    box-shadow: 0 0 20px rgb(255, 0, 255);
+    background-color: rgb(255, 0, 255, 0.1);
+  }
+  to {
+    box-shadow: 0 0 20px rgb(0, 255, 255);
+    background-color: rgba(0, 255, 255, 0.1);
+  }
+}
+.footer-bottom{
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  padding: 0;
+  padding-bottom: 55px;
+  height: 30px;
+}
+  .seek-bar-div{
+    width: 100%;
+  }
+  .seek-bar-div input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 2px;
+  }
+  .seek-bar-div input[type=range]:focus {
+    outline: none;
+  }
+  .seek-bar-div input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: rgb(210,0,0);
+background: linear-gradient(90deg, rgba(210,0,0,1) 0%, rgba(71,0,0,1) 25%, rgba(77,0,145,1) 49%, rgba(0,11,75,1) 75%, rgba(92,112,255,1) 100%);
+  }
+  .seek-bar-div input[type=range]::-webkit-slider-runnable-track:hover{
+    transform: scaleY(2.5);
+    transition: 0.3s;
+  }
+  .seek-bar-div input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  .seek-bar-div input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgb(210,0,0);
+background: linear-gradient(90deg, rgba(210,0,0,1) 0%, rgba(71,0,0,1) 25%, rgba(77,0,145,1) 49%, rgba(0,11,75,1) 75%, rgba(92,112,255,1) 100%);
+border-radius: 1.3px;
+  }
+  .seek-bar-div input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: #3071a9;
+    border-radius: 1.3px;
+  }
+  .seek-bar-div input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  .seek-bar-div input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  .seek-bar-div input[type=range]::-ms-fill-lower {
+    background: #2a9567;
+    border-radius: 2.6px;
+  }
+  .seek-bar-div input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border-radius: 2.6px;
+  }
+  .seek-bar-div input[type=range]::-ms-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  .seek-bar-div input[type=range]:focus::-ms-fill-lower {
+    background: #367ebd;
+  }
+  .seek-bar-div input[type=range]:focus::-ms-fill-upper {
+    background: #36bd6e;
+  }
+  #text-container {
+    position: relative;
+  }
+  .play{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 20%;
+  }
+  .zvuk{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:end;
+    padding: 0 20px 0 20px;
+    width: 40%;
+  }
+  #song-name{
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: x-large;
+    overflow: hidden;
+    white-space: nowrap;
+    /* background-color: #2a9567; */
+    padding: 0 20px 0 20px;
+    width: 40%;
+  }
+  #song-name:hover{
+    cursor: default;
+  }
+  .animation{
+    animation: scroll-left 10s linear infinite;
+  }
+  @keyframes scroll-left {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+      #time-display {
+        background: none;
+        position: absolute;
+color: #fff;
+padding-left: 56px;
+    }
