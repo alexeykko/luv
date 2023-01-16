@@ -72,6 +72,16 @@ padding: 0;
 #mute:hover{
     color: rgb(200, 200, 200);
 }
+#repeat{
+  background: none;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding-right: 15px;
+}
+#repeat:hover{
+  color: rgb(200, 200, 200);
+}
 #current-time{
     color: white;
     padding: 20px;

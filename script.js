@@ -341,3 +341,34 @@ function convertTime(time) {
 seekBar.addEventListener("mouseout", function(){
   timeDisplay.style.display = "none";
 });
+var repeatButton = document.getElementById("repeat");
+
+var isRepeating = false;
+repeatButton.addEventListener("click", function() {
+  if (isRepeating) {
+      repeatButton.innerHTML = '<i class="bi bi-shuffle"></i>';
+      isRepeating = false;
+      repeatButton.style.color = "white";
+  } else {
+      repeatButton.innerHTML = '<i class="bi bi-arrow-counterclockwise"></i>';
+      isRepeating = true;
+    }
+  });
+  player.addEventListener("ended", function(){
+    if (isRepeating) {
+        player.currentTime = 0;
+        player.play();
+        playButton.innerHTML = '<i class="bi bi-pause-fill"></i>';
+        isPlaying = true;
+    } else {
+        currentIndex++;
+        songTitle.innerHTML = songTitles[currentIndex];
+        playButton.innerHTML = '<i class="bi bi-pause-fill"></i>';
+        isPlaying = true;
+        if (currentIndex === sources.length) {
+            currentIndex = 0;
+        }
+        player.src = sources[currentIndex].src;
+        player.play();
+    }
+});
