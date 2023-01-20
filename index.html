@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (min-width: 1920px)" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1920px)" href="smallscreen.css">
+    <link rel="stylesheet"  href="style.css">
+    <!-- media="screen and (min-width: 1920px)" -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1920px)" href="smallscreen.css"> -->
     <title>LUV</title>
 </head>
 <body>
+    <header>
+        <div class="menubutton"></div>
+    </header>
     <audio id="player">
         <source src="Baby-Pluto.mp3" id="song1-source">
         <source src="Futsal-Shuffle.mp3" id="song2-source">
@@ -20,8 +25,8 @@
         <source src="Im-Sorry.mp3">
         <source src="Venetia.mp3">
         <source src="P2.mp3">
-        <source src="Yessirskiii.mp3">
-        <source src="Myron.mp3">
+        <source src="Celebration-Station.mp3">
+        <source src="That-Way.mp3">
         <source src="XO-Tour-Llif3.mp3">
         <source src="20-Min.mp3">
         <source src="The-Way-Life-Goes.mp3">
@@ -30,85 +35,159 @@
         <source src="Neon-Guts.mp3">
         <source src="No-Sleep-Leak.mp3">
         <source src="For-Real.mp3">
+        <source src="7am.mp3">
+        <source src="Top.mp3">
+        <source src="You-Was-Right.mp3">
+        <source src="Money-Longer.mp3">
+        <source src="Erase-Your-Social.mp3">
+        <source src="Do-What-I-Want.mp3">
+        <source src="Yessirskiii.mp3">
+        <source src="Myron.mp3">
       </audio>
       <div class="mp">
-        <div class="container">
+        <div class="containermp">
             <div class="w50">
         <img class="logo" src="logo.png" alt="">
-        <a class="link" href="#EternalAtake" onclick="scrollToDiv()">Eternal Atake</a>
-        <a class="link" href="#LuvIsRage">Luv Is Rage 2</a>
+    <div class="cards">
+        <div class="link" href="#EternalAtake" onclick="scrollToDiv()">
+            <img class="logo2" src="EternalAtakeLogo.png" alt="">
+        <h3>Eternal Atake</h3>
+        <li>Baby Pluto</li>
+        <li>P2</li>
+        <li>Futsal Shuffle.....</li>
+        <p>2020</p>
+    </div>
+            
+        <div class="link" href="#LuvIsRage">
+            <img class="logo2" src="LuvIsRage2Logo.png" alt="">
+        <h3>Luv Is Rage 2</h3>
+        <li>Xo Tour Llif3</li>
+        <li>20 min</li>
+        <li>The Way Life goes.....</li>
+        <p>2017</p>
+    </div>
+            
+        <div class="link" href="#Other">
+            <img class="logo2" src="Other.png" alt="">
+        <h3>Other Songs</h3>
+        <li>Erase Your Social</li>
+        <li>Myron</li>
+        <li>Money Longer.....</li>
+        <p>2015-2022</p>
+    </div>
+            
+    </div>
       </div></div></div>
+      
     <div class="EternalAtake" id="EternalAtake">
         <div class="container">
             <div class="song" id="1">
-                <h1 data-glitch="Explore">Baby Pluto
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>Baby Pluto
                 <i class="bi bi-play-circle-fill" id="1hover"></i></h1>
             </div>
             <div class="song" id="2">
-                <h1>Futsal Shuffle
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>Futsal Shuffle
                 <i class="bi bi-play-circle-fill" id="1hover"></i></h1>
             </div>
             <div class="song" id="3">
-                <h1>Lo Main
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>Lo Main
                 <i class="bi bi-play-circle-fill" id="1hover"></i></h1>
             </div>
             <div class="song" id="4">
-                <h1>I'm Sorry
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>I'm Sorry
                 <i class="bi bi-play-circle-fill"></i></h1>
             </div>
             <div class="song" id="5">
-                <h1>Venetia
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>Venetia
                 <i class="bi bi-play-circle-fill"></i></h1>
             </div>
             <div class="song" id="6">
-                <h1>P2
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>P2
                 <i class="bi bi-play-circle-fill"></i></h1>
             </div>
             <div class="song" id="7">
-                <h1>Yessirskiii
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>Celebration Station
                 <i class="bi bi-play-circle-fill"></i></h1>
             </div>
             <div class="song" id="8">
-                <h1>Myron
+                <img class="minilogo" src="EternalAtakeLogo.png" alt=""><h1>That Way
                 <i class="bi bi-play-circle-fill"></i></h1>
             </div>
         </div>
     </div>
+
     <div class="LuvIsRage" id="LuvIsRage">
         <div class="container">
             <div class="song" id="9">
-                <h1>XO Tour Llif3
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>XO Tour Llif3</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
             <div class="song" id="10">
-                <h1>20 min
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>20 min</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
             <div class="song" id="11">
-                <h1>Way Life Goes
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>The Way Life Goes (ft. Oh Wonder)</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
             <div class="song" id="12">
-                <h1>Sauce it up
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>Sauce it up</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
             <div class="song" id="13">
-                <h1>Dark Queen
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>Dark Queen</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
             <div class="song" id="14">
-                <h1>Neon Guts
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>Neon Guts (ft. Pharrell Williams)</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
             <div class="song" id="15">
-                <h1>No Sleep Leak
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>No Sleep Leak</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
             <div class="song" id="16">
-                <h1>For Real
-                <i class="bi bi-play-circle-fill"></i></h1>
+                <img class="minilogo" src="LuvIsRage2Logo.png" alt=""><h1>For Real</h1>
+                <i class="bi bi-play-circle-fill"></i>
             </div>
       </div></div>
+
+      <div class="Other" id="Other">
+        <div class="container">
+            <div class="song" id="17">
+                <img class="minilogo" src="LuvIsRage1Logo.png" alt=""><h1>7AM</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div class="song" id="18">
+                <img class="minilogo" src="LuvIsRage1Logo.png" alt=""><h1>Top</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div class="song" id="19">
+                <img class="minilogo" src="LuvVsTheWorldLogo.png" alt=""><h1>You Was Right</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div class="song" id="20">
+                <img class="minilogo" src="LuvVsTheWorldLogo.png" alt=""><h1>Money Longer</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div class="song" id="21">
+                <img class="minilogo" src="ThePerfectLUVTapeLogo.png" alt=""><h1>Erase Your Social</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div class="song" id="22">
+                <img class="minilogo" src="ThePerfectLUVTapeLogo.png" alt=""><h1>Do What I Want</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div class="song" id="23">
+                <img class="minilogo" src="LuvVsTheWorld2Logo.png" alt=""><h1>Yessirskiii (ft. 21 Savage)</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+            <div class="song" id="24">
+                <img class="minilogo" src="LuvVsTheWorld2Logo.png" alt=""><h1>Myron</h1>
+                <i class="bi bi-play-circle-fill"></i>
+            </div>
+        </div></div>
+
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function(){
@@ -121,7 +200,7 @@
     });
 </script>
 </body>
-<footer>
+<footer id="footer">
     <div class="media-controls">
         <div class="g1">
             <div id="song-name">
@@ -132,8 +211,8 @@
         <button id="play-pause" onclick="playPause()"><i class="bi bi-pause-fill"></i></button>
             <button id="next-song"><i class="bi bi-skip-end-fill"></i></button></div>
             <div class="zvuk">
-        <button id="repeat"><i class="bi bi-shuffle"></i></button>
-        <input type="range" id="volume" min="0" max="1" step="0.05" value="0.2" onchange="setVolume()">
+        <button id="repeat"><i class="bi bi-arrow-right"></i></button>
+        <input type="range" id="volume" min="0" max="1" step="0.05" value="0.2" oninput="setVolume()">
         <button id="mute" onclick="mute()"><i class="bi bi-volume-up-fill"></i></button></div>
        </div>
        <div class="footer-bottom">
@@ -141,7 +220,7 @@
                 <p id="current-time"></p>
             </div>
         <div class="seek-bar-div">
-        <input id="seek-bar" type="range" min="0" max="" step="0.1" value="0" onchange="setSeek()" onmousemove="showTime(event)" onchange="setSeek()">
+        <input id="seek-bar" type="range" min="0" max="" step="0.1" value="0" oninput="setSeek()" onmousemove="showTime(event)" onchange="setSeek()">
         </div>
         <div id="time-display"></div>
         <div id="time-block">
