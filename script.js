@@ -310,7 +310,7 @@
         }
         
         function setSeek() {
-          player.currentTime = seekBar.value;
+          player.currentTime = seekBar.value; 
           if (Math.abs(player.currentTime - seekBar.value) > 1) {
             player.currentTime = seekBar.value;
         }
@@ -404,7 +404,7 @@ function showTime(event) {
 var hoverTime = seekBarPercent * songDuration;
 
 timeDisplay.innerHTML = convertTime(hoverTime);
-timeDisplay.style.top = "78px";
+
 timeDisplay.style.marginLeft  = `${cursorPosition}px`;
 timeDisplay.style.display = "block";
 }

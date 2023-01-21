@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Permanent+Marker&family=Ubuntu:wght@700&display=swap');
 body{
     margin: 0;
     padding: 0;
 }
 footer{
     padding: auto;
-    display: flex;
     position: fixed;
     bottom: 0;
-    background-color: #333333;
+    background-color: #1A1A1D;
     width: 100%;
     height: 140px;
     justify-content: center;
+    display: none;
 }
 .media-controls{
     width: 80%;
-    padding-top: 30px;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #333333;
 }
 .g1{
 display: flex;
@@ -71,6 +71,7 @@ padding: 0;
 }
 #mute:hover{
     color: rgb(200, 200, 200);
+    cursor: pointer;
 }
 #repeat{
   background: none;
@@ -81,6 +82,7 @@ padding: 0;
 }
 #repeat:hover{
   color: rgb(200, 200, 200);
+  cursor: pointer;
 }
 #current-time{
     color: white;
@@ -96,55 +98,15 @@ padding: 0;
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 15px;
     grid-gap: 30px;
-    padding: 50px;
-    padding-bottom: 350px;
+    padding: 25px;
+    height: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
-  .w50{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .logo{
-    margin: 50px;
-    margin-top: 100px;
-  }
-  .link{
-    margin: 10px;
-    text-decoration: none;
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 64px;
-    color: rgb(220, 96, 137);
-  }
-  .link:hover {
-    animation: shine 1s ease-in-out infinite;
-    text-shadow: 0 0 20px #fff;
-    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
-  }
-  @keyframes shine {
-    0% {
-      text-shadow: 0 0 5px #fff;
-    }
-    50% {
-      text-shadow: 0 0 20px #fff;
-    }
-    100% {
-      text-shadow: 0 0 5px #fff;
-    }
-  }
-  .mp{
-    background-image: url(LuvVsTheWorld2No.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+
   .EternalAtake{
     background-image: url(EternalAtake.jpg);
     background-size: 100%;
@@ -155,7 +117,7 @@ padding: 0;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    padding-bottom: 142px;
   }
   .LuvIsRage{
     background-image: url(LuvIsRage.jpg);
@@ -167,75 +129,202 @@ padding: 0;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    padding-bottom: 142px;
   }
-  .song{
-    height: 200px;
-    font-family: 'Covered By Your Grace', cursive;
-    margin: 30px;
-    display: flex;
-    justify-items: center;
+  .mp{
+    background-image: url(LuvVsTheWorld2No.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+  .Other{
+    background-image: url(OtherBack.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 142px;
+  }
+            .minilogo{
+          width: 210px;
+          height: 210px;
+          border-radius: 30px;
+          padding: 0;
+          margin: 0;
+          margin-top: 20px;
+          margin-bottom: 20px;
+            }
+        .song{
+          height: 350px;
+          font-family: 'Ubuntu';
+          display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 50%;
-    background-color: rgba(51, 51, 51, 0.9);
-  }
-  .song h1{
-    color: #fff;
-    text-shadow: 0 0 20px black;
-    font-weight: 900;
-    font-size: 42px;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0;
-  }
-  .song h1:hover{
-    cursor: default;
-    -webkit-text-stroke: 0.1px rgba(222, 222, 222, 0.619);
-  }
-  .song .bi{
-    color: white;
-    margin: 20px;
-    align-items: center;
-  }
-.song:hover{
-  /* transform: translate(-4px, 5px); */
-  animation: shake .3s infinite alternate;
-  box-sizing: border-box;
-  border-radius: 10px;
-  background-color: #00ddff1a;
-  transition: all 0.2s ease;
-  /* animation: width .3s; */
-}
-@keyframes width {
-  0%{
-    border-radius: 100%;
-  }
-  100%{
-    border-radius: 10px;
-  }
-}
-h1:hover{
-  animation: shine2 1.5s ease-in-out infinite;
-}
-
+          position: relative;
+        }
+       
+        .song i{
+          position: absolute;
+          bottom: -5px;
+          right: 0;
+          font-size: 45px;
+        }
+        .song h1{
+          font-weight: 900;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          text-align: center;
+          padding: 0;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin: 0;
+        }
+        .song .bi{
+          margin: 20px;
+          align-items: center;
+        }
+      .song:hover{
+        /* transform: translate(-4px, 5px); */
+        /* animation: shake .3s infinite alternate; */
+        border: none;
+        /* animation: width .3s; */
+      }
+      @keyframes width {
+        0%{
+          border-radius: 100%;
+        }
+        100%{
+          border-radius: 10px;
+        }
+      }
+      h1:hover{
+        /* animation: shine2 1.5s ease-in-out infinite; */
+      }
+ /* LuvIsRage Song */
+        .LuvIsRage .song{
+          background-color: #2D283E;
+          border-radius: 50px;
+          color: #D1D7E0;
+          border: 3px solid #802BB1;
+        }
+        .LuvIsRage .song:hover{
+          animation: shine2 1.5s ease-in-out infinite;
+          box-shadow: 0 0 20px #9c38d5;
+          border-radius: 0;
+          transition: 0.2s;
+        }
+        .LuvIsRage .minilogo{
+          box-shadow: 0 0 20px #564F6F;
+        }
+        .LuvIsRage .song h1{
+          color: #D1D7E0;
+        }
+        .LuvIsRage h1:hover{
+          cursor: default;
+        }
+        .LuvIsRage i{
+          color: #802BB1;
+          padding: 0;
+          margin: 0;
+        }
+        .LuvIsRage i:hover{
+          cursor: pointer;
+          -webkit-text-stroke: 1px rgb(255, 255, 255);
+          text-shadow: 0 0 5px #ffffff;
+          transition: 0.2s;
+        }
+        /* EternalAtake Song */
+        .EternalAtake .song{
+          background-color: #1A1A1D;
+          border-radius: 50px;
+          color: #F0EBF4;
+          border: 3px solid #C3073F;
+        }
+        .EternalAtake .song:hover{
+          text-shadow: 0 0 10px rgb(255, 255, 255);
+          box-shadow: 0 0 20px #950740;
+          border-radius: 0;
+          transition: 0.2s;
+        }
+        .EternalAtake .minilogo{
+          box-shadow: 0 0 20px #950740;
+        }
+        .EternalAtake .song h1{
+          color: #F0EBF4;
+        }
+        .EternalAtake h1:hover{
+          cursor: default;
+        }
+        .EternalAtake i{
+          color: #C3073F;
+          padding: 0;
+          margin: 0;
+        }
+        .EternalAtake i:hover{
+          cursor: pointer;
+          -webkit-text-stroke: 1px rgb(255, 255, 255);
+          text-shadow: 0 0 5px #ffffff;
+          transition: 0.2s;
+        }
+        /* Other */
+        .Other .song{
+          background-color: #020509;
+          border-radius: 50px;
+          color: #FFCE38;
+          border: 3px solid #00CFFA;
+        }
+        .Other .song:hover{
+          text-shadow: 0 0 10px #fdfdfd;
+          box-shadow: 0 0 20px #00CFFA;
+          border-radius: 0;
+          transition: 0.2s;
+        }
+        .Other .minilogo{
+          box-shadow: 0 0 20px #00CFFA;
+        }
+        .Other .song h1{
+          color: #FFCE38;
+        }
+        .Other h1:hover{
+          cursor: default;
+        }
+        .Other i{
+          color: #FF0038;
+          padding: 0;
+          margin: 0;
+        }
+        .Other i:hover{
+          cursor: pointer;
+          -webkit-text-stroke: 1px rgb(255, 255, 255);
+          text-shadow: 0 0 5px #fefefe;
+          transition: 0.2s;
+        }
 @keyframes shine2 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
   from {
-    text-shadow: 0 0 20px rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
   }
   to {
-    text-shadow: 0 0 20px rgb(255, 255, 176);
+    text-shadow: 0 0 10px rgb(255, 255, 176);
+  }
+}
+@keyframes shine3 {
+  from {
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  to {
+    text-shadow: 0 0 10px rgb(255, 210, 251);
   }
 }
 @keyframes shake {
@@ -245,11 +334,9 @@ h1:hover{
   100% { transform: translate(2px, -1px); }
   from {
     box-shadow: 0 0 20px rgb(255, 0, 255);
-    background-color: rgb(255, 0, 255, 0.1);
   }
   to {
     box-shadow: 0 0 20px rgb(0, 255, 255);
-    background-color: rgba(0, 255, 255, 0.1);
   }
 }
 .footer-bottom{
@@ -257,7 +344,7 @@ h1:hover{
   align-items: center;
   width: 50vw;
   padding: 0;
-  padding-bottom: 55px;
+  padding-bottom: 100px;
   height: 30px;
 }
   .seek-bar-div{
@@ -367,24 +454,127 @@ border-radius: 1.3px;
     /* background-color: #2a9567; */
     padding: 0 20px 0 20px;
     width: 40%;
-  }
-  #song-name:hover{
     cursor: default;
   }
-  .animation{
-    animation: scroll-left 10s linear infinite;
+  #song-name p{
+    /* animation: scroll-left 10s linear infinite 3s;
+    animation-delay: 3s; */
   }
-  @keyframes scroll-left {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
+    @keyframes scroll-left {
+          from {
+              transform: translateX(0px);
+          }
+          to {
+              transform: translateX(-100%);
+          }
+      }
       #time-display {
         background: none;
         position: absolute;
-color: #fff;
-padding-left: 56px;
+        color: #fff;
+        padding-left: 56px;
+        top: 54px;
     }
+    .cards{
+      display: flex;
+    }
+    .w50{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    margin-top: 50px;
+    width: 200px;
+  }
+  .logo2{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 20px;
+    margin-bottom: 10px;
+  }
+  h3{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 36px;
+    /* color: rgb(220, 96, 137); */
+    color: black;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .link{
+    width: 290px;
+    height: 450px;
+    margin: 10px 20px 10px 20px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border: 5px solid white;
+  }
+  .link li{
+    font-size: 16px;
+    color: black;
+    list-style: none;
+    margin: 3px;
+    font-family: 'Covered By Your Grace', cursive;
+  }
+  .link p{
+    font-size: 12px;
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+  }
+  .link:hover {
+    animation-play-state: running;
+    box-shadow: 0 0 40px #fff;
+      transform: scale(1.03);
+      transition: all ease 0.5s;
+      border-radius: 0;
+  }
+  .mp{
+    background-image: url(LuvVsTheWorld2No.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .menubutton {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
