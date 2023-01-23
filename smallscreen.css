@@ -117,7 +117,7 @@ padding: 0;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 142px;
+    min-height: 100vh;
   }
   .LuvIsRage{
     background-image: url(LuvIsRage.jpg);
@@ -129,7 +129,7 @@ padding: 0;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 142px;
+    min-height: 100vh;
   }
   .mp{
     background-image: url(LuvVsTheWorld2No.jpg);
@@ -153,7 +153,7 @@ padding: 0;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 142px;
+    min-height: 100vh;
   }
             .minilogo{
           width: 210px;

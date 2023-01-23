@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Permanent+Marker&family=Ubuntu:wght@700&display=swap');
-body{
-    margin: 0;
-    padding: 0;
+html{
+
 }
 footer{
     padding: auto;
@@ -11,29 +10,24 @@ footer{
     bottom: 0;
     background-color: #1A1A1D;
     width: 100%;
-    height: 180px;
-    justify-content: center;
+    height: 140px;
     display: none;
 }
 .media-controls{
-    width: 80%;
-    padding-top: 50px;
+    width: 100%;
+    padding-top: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .g1{
 display: flex;
-width: 50vw;
-justify-content: center;
+
 padding: 0;
 }
 #play-pause{
     border: none;
     border-radius: 50%;
     background: none;
-    font-size: 64px;
+    font-size: 50px;
     text-align: center;
     color: white;
 }
@@ -41,7 +35,7 @@ padding: 0;
   border: none;
   border-radius: 50%;
   background: none;
-  font-size: 46px;
+  font-size: 36px;
   text-align: center;
   color: white;
 }
@@ -49,78 +43,66 @@ padding: 0;
   border: none;
   border-radius: 50%;
   background: none;
-  font-size: 46px;
+  font-size: 36px;
   text-align: center;
   color: white;
 }
-#previous-song:hover{
-  color: rgb(200, 200, 200);
-}
-#next-song:hover{
-  color: rgb(200, 200, 200);
-}
-#play-pause:hover{
-    color: rgb(200, 200, 200);
+#volume{
+    display: none;
 }
 #mute{
+    display: none;
     background: none;
     color: white;
     border: none;
-    font-size: 24px;
-    padding-left: 15px;
+    font-size: 20px;
+    padding-left: 5px;
 }
 #mute:hover{
     color: rgb(200, 200, 200);
     cursor: pointer;
 }
 #repeat{
+    position: absolute;
+    right: 10px;
+    top: 15px;
   background: none;
   color: white;
   border: none;
   font-size: 24px;
-  padding-right: 15px;
-}
-#repeat:hover{
-  color: rgb(200, 200, 200);
-  cursor: pointer;
+  padding-right: 5px;
 }
 #current-time{
     color: white;
-    padding: 20px;
-    padding-right: 20px;
-    font-size: large;
+    padding: 10px;
+    padding-right: 10px;
+    font-size: medium;
 }
 #duration {
     color: white;
-    padding: 20px;
-    padding-left: 20px;
-    font-size: large;
+    padding: 10px;
+    padding-left: 10px;
+    font-size: medium;
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     row-gap: 15px;
     grid-gap: 30px;
-    padding: 50px;
+    padding: 25px;
     height: auto;
-    padding-left: 20vw;
-    padding-right: 20vw;
   }
 
   .EternalAtake{
-    background-image: url(EternalAtake.jpg);
-    background-size: 100%;
+    width: 100vw;
+    background-image: url(EternalAtakeMobile.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     min-height: 100vh;
   }
   .LuvIsRage{
-    background-image: url(LuvIsRage.jpg);
+    background-image: url(LuvIsRageMobile.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -144,7 +126,7 @@ padding: 0;
     height: 100vh;
   }
   .Other{
-    background-image: url(OtherBack.jpg);
+    background-image: url(OtherBackMobile.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -156,49 +138,42 @@ padding: 0;
     min-height: 100vh;
   }
             .minilogo{
-          width: 300px;
-          height: 300px;
-          border-radius: 30px;
+          width: 60px;
+          height: auto;
+          border-radius: 10px;
           padding: 0;
-          margin: 0;
-          margin-top: 25px;
+          margin: 10px;
+          margin-top: 20px;
           margin-bottom: 20px;
             }
         .song{
-          height: 475px;
+          height: 80px;
           font-family: 'Ubuntu';
           display: flex;
-    flex-direction: column;
-    align-items: center;
+          flex-direction: row;
           position: relative;
         }
        
         .song i{
-          position: absolute;
-          bottom: -5px;
+          bottom: -7px;
           right: 0;
-          font-size: 55px;
+          font-size: 45px;
         }
         .song h1{
+            width: 55%;
           font-weight: 900;
-          font-size: 24px;
-          display: flex;
-          align-items: center;
+          font-size: 20px;
+          text-align: start;
           text-decoration: none;
-          text-align: center;
           padding: 0;
+          padding-left: 10px;
+          padding-right: 10px;
           margin: 0;
         }
         .song .bi{
           margin: 20px;
           align-items: center;
         }
-      .song:hover{
-        /* transform: translate(-4px, 5px); */
-        /* animation: shake .3s infinite alternate; */
-        border: none;
-        /* animation: width .3s; */
-      }
       @keyframes width {
         0%{
           border-radius: 100%;
@@ -207,21 +182,12 @@ padding: 0;
           border-radius: 10px;
         }
       }
-      h1:hover{
-        /* animation: shine2 1.5s ease-in-out infinite; */
-      }
  /* LuvIsRage Song */
         .LuvIsRage .song{
           background-color: #2D283E;
-          border-radius: 50px;
+          border-radius: 15px;
           color: #D1D7E0;
           border: 3px solid #802BB1;
-        }
-        .LuvIsRage .song:hover{
-          animation: shine2 1.5s ease-in-out infinite;
-          box-shadow: 0 0 20px #9c38d5;
-          border-radius: 0;
-          transition: 0.2s;
         }
         .LuvIsRage .minilogo{
           box-shadow: 0 0 20px #564F6F;
@@ -246,15 +212,9 @@ padding: 0;
         /* EternalAtake Song */
         .EternalAtake .song{
           background-color: #1A1A1D;
-          border-radius: 50px;
+          border-radius: 15px;
           color: #F0EBF4;
           border: 3px solid #C3073F;
-        }
-        .EternalAtake .song:hover{
-          text-shadow: 0 0 10px rgb(255, 255, 255);
-          box-shadow: 0 0 20px #950740;
-          border-radius: 0;
-          transition: 0.2s;
         }
         .EternalAtake .minilogo{
           box-shadow: 0 0 20px #950740;
@@ -279,15 +239,9 @@ padding: 0;
         /* Other */
         .Other .song{
           background-color: #020509;
-          border-radius: 50px;
+          border-radius: 15px;
           color: #FFCE38;
           border: 3px solid #00CFFA;
-        }
-        .Other .song:hover{
-          text-shadow: 0 0 10px #fdfdfd;
-          box-shadow: 0 0 20px #00CFFA;
-          border-radius: 0;
-          transition: 0.2s;
         }
         .Other .minilogo{
           box-shadow: 0 0 20px #00CFFA;
@@ -338,9 +292,7 @@ padding: 0;
   }
 }
 .footer-bottom{
-  display: flex;
-  align-items: center;
-  width: 50vw;
+    width: 100%;
   padding: 0;
   padding-bottom: 100px;
   height: 30px;
@@ -364,10 +316,6 @@ padding: 0;
     animation: 0.2s;
     background: rgb(210,0,0);
 background: linear-gradient(90deg, rgba(210,0,0,1) 0%, rgba(71,0,0,1) 25%, rgba(77,0,145,1) 49%, rgba(0,11,75,1) 75%, rgba(92,112,255,1) 100%);
-  }
-  .seek-bar-div input[type=range]::-webkit-slider-runnable-track:hover{
-    transform: scaleY(2.5);
-    transition: 0.3s;
   }
   .seek-bar-div input[type=range]::-webkit-slider-thumb {
     height: 10px;
@@ -430,28 +378,30 @@ border-radius: 1.3px;
     position: relative;
   }
   .play{
+    translate: (50%,50%);
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 20%;
   }
   .zvuk{
+    position: absolute;
     display: flex;
     flex-wrap: nowrap;
     justify-content:end;
     padding: 0 20px 0 20px;
-    width: 40%;
+    right: 0;
   }
   #song-name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
     color: #fff;
     font-family: 'Ubuntu';
-    font-size: x-large;
-    overflow: hidden;
-    white-space: nowrap;
+    font-size: medium;
+    /* overflow: hidden; */
     /* background-color: #2a9567; */
-    padding: 0 20px 0 20px;
-    width: 40%;
     cursor: default;
   }
   #song-name p{
@@ -471,70 +421,72 @@ border-radius: 1.3px;
         position: absolute;
         color: #fff;
         padding-left: 56px;
-        top: 70px;
+        top: 60px;
     }
     .cards{
       display: flex;
-    }
-    .w50{
-    display: flex;
-    flex-direction: column;
+      flex-direction: column;
     align-items: center;
     justify-content: center;
+    }
+    .w50{
+
   }
   .logo{
-    margin: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 150px;
   }
   .logo2{
-    width: 350px;
-    height: 350px;
-    border-radius: 25px;
-    margin: 25px;
-    margin-bottom: 10px;
+    margin: 15px;
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+    align-self: flex-start;
   }
   h3{
     font-family: 'Permanent Marker', cursive;
-    font-size: 42px;
+    font-size: 16px;
     /* color: rgb(220, 96, 137); */
     color: black;
     padding: 0;
     margin: 0;
     margin-bottom: 5px;
   }
-  .link{
-    width: 400px;
-    height: 600px;
-    margin: 20px 40px 20px 40px;
-    background-color: rgb(190, 190, 190);
-    border-radius: 50px;
+  .list{
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    right: 30px;
+    width: 50%;
+  }
+  .link{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 15px;
     cursor: pointer;
-    border: 10px solid white;
+    border: 3px solid white;
   }
   .link li{
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     list-style: none;
-    margin: 3px;
     font-family: 'Covered By Your Grace', cursive;
   }
   .link p{
-    font-size: 16px;
+    display: none;
+    font-size: 12px;
     color: black;
     position: absolute;
     bottom: 0px;
     right: 20px;
   }
-  .link:hover {
-    animation-play-state: running;
-    box-shadow: 0 0 40px #fff;
-      transform: scale(1.03);
-      transition: all ease 0.5s;
-      border-radius: 0;
-  }
+
   .mp{
     background-image: url(LuvVsTheWorld2No.jpg);
     background-size: 100%;
@@ -549,7 +501,8 @@ border-radius: 1.3px;
   }
   
   .menubutton {
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
     cursor: pointer;
     position: fixed;
     top: 30px;
