@@ -451,3 +451,34 @@ repeatButton.addEventListener("click", function() {
         songTitle.innerHTML = songTitles[currentIndex];
     }
 });
+
+// const mobile = window.matchMedia("(max-width: 800px)");
+// const tablet = window.matchMedia("(min-width: 801px) and (max-width: 1920px)");
+// const desktop = window.matchMedia("(min-width: 1921px)");
+
+// let cssFile;
+// if (mobile.matches) {
+//   cssFile = "mobile.css";
+// } else if (tablet.matches) {
+//   cssFile = "smallscreen.css";
+// } else {
+//   cssFile = "style.css";
+// }
+
+// const link = document.createElement("link");
+// link.setAttribute("rel", "stylesheet");
+// link.setAttribute("type", "text/css");
+// link.setAttribute("href", cssFile);
+// document.getElementsByTagName("head")[0].appendChild(link);
+
+// //listener
+// mobile.addListener(handleMediaChange);
+// tablet.addListener(handleMediaChange);
+// desktop.addListener(handleMediaChange);
+
+// function handleMediaChange(e) {
+//   if (e.matches) {
+//     cssFile = e.media === mobile ? "mobile.css" : e.media === tablet ? "smallscreen.css" : "style.css";
+//     link.setAttribute("href", cssFile);
+//   }
+// }

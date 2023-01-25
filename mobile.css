@@ -94,12 +94,11 @@ padding: 0;
   }
 
   .EternalAtake{
-    width: 100vw;
     background-image: url(EternalAtakeMobile.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    min-height: 100vh;
+    background-attachment: fixed;
   }
   .LuvIsRage{
     background-image: url(LuvIsRageMobile.jpg);
@@ -107,11 +106,6 @@ padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100vh;
   }
   .mp{
     background-image: url(LuvVsTheWorld2No.jpg);
@@ -119,23 +113,15 @@ padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
+    height: 800px;
   }
   .Other{
     background-image: url(OtherBackMobile.jpg);
-    background-size: 100%;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100vh;
+    padding-bottom: 140px;
   }
             .minilogo{
           width: 60px;
@@ -189,6 +175,11 @@ padding: 0;
           color: #D1D7E0;
           border: 3px solid #802BB1;
         }
+        .LuvIsRage .song:hover{
+          border-radius: 15px;
+          box-shadow: none;
+          animation: none;
+        }
         .LuvIsRage .minilogo{
           box-shadow: 0 0 20px #564F6F;
         }
@@ -205,8 +196,8 @@ padding: 0;
         }
         .LuvIsRage i:hover{
           cursor: pointer;
-          -webkit-text-stroke: 1px rgb(255, 255, 255);
-          text-shadow: 0 0 5px #ffffff;
+          -webkit-text-stroke: none;
+          text-shadow: none;
           transition: 0.2s;
         }
         /* EternalAtake Song */
@@ -215,6 +206,12 @@ padding: 0;
           border-radius: 15px;
           color: #F0EBF4;
           border: 3px solid #C3073F;
+        }
+        .EternalAtake .song:hover{
+          border-radius: 15px;
+          box-shadow: none;
+          animation: none;
+          text-shadow: none;
         }
         .EternalAtake .minilogo{
           box-shadow: 0 0 20px #950740;
@@ -242,6 +239,12 @@ padding: 0;
           border-radius: 15px;
           color: #FFCE38;
           border: 3px solid #00CFFA;
+        }
+        .Other .song:hover{
+          border-radius: 15px;
+          box-shadow: none;
+          animation: none;
+          text-shadow: none;
         }
         .Other .minilogo{
           box-shadow: 0 0 20px #00CFFA;
